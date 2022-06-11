@@ -8,6 +8,7 @@ const ToDoItem = ({ todo, handleToggle }) => {
 
   return (
     <div
+      key={todo.id + todo.task}
       id={todo.id}
       value={todo.id}
       onClick={handleCompletedItem}

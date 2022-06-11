@@ -4,6 +4,7 @@ import data from "./data.json";
 import './App.css';
 //import db from './services/firebase-config';
 //import firebase from 'firebase';
+import Header from './header';
 import ToDoList from './ToDoList';
 import ToDoForm from './ToDoForm';
 import { Container } from "@material-ui/core";
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <Container maxWidth="md">
+      <Header />
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter} />
       <ToDoForm addTask={addTask}/>
     </Container >
